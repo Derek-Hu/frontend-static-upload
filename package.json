@@ -1,0 +1,33 @@
+{
+  "name": "static-upload",
+  "version": "2.0.1",
+  "description": "Upload files server, support multiple environments",
+  "main": "./lib/index.js",
+  "bin": {
+    "static-upload": "./bin/upload.js"
+  },
+  "scripts": {
+    "code-lint": "eslint lib bin",
+    "fix": "npm run code-lint --fix",
+    "prepublish": "npm run code-lint"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^2.1.1",
+    "dotenv": "^5.0.1",
+    "fs-extra": "^7.0.0",
+    "log4js": "^2.7.0",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-scope": "^3.7.1"
+  }
+}
